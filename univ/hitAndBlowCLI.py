@@ -18,9 +18,9 @@ while flag == False:
             continue
         else:
             for i in range(4):
-              if (b[i] < "0") or (b[i] > "9"):
-                  print("数字ではありません")
-                  break
+                if (b[i] < "0") or (b[i] > "9"):
+                    print("数字ではありません")
+                    break
 
         numsValidateFlag = True
 
@@ -28,12 +28,13 @@ while flag == False:
     for i in range(4):
         if a[i] == b[i]:
             hit = hit + 1
-    
+
     blow = 0
-    for i in range(4):
-        for j in range(4):
-            if (b[0] == a[i]) and (a[i] != b[i]) and (a[0] != b[0]):
+    for j in range(4):
+        for i in range(4):
+            if (b[j] == a[i]) and (a[i] != b[i]) and (a[j] != b[j]):
                 blow = blow + 1
+                break
 
     print('hit' + str(hit))
     print('blow' + str(blow))
