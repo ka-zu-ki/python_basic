@@ -15,6 +15,7 @@ while flag == False:
 
         if len(b) != 4:
             print("4桁の数値を入力してください!")
+            continue
         else:
             for i in range(4):
               if (b[i] < "0") or (b[i] > "9"):
