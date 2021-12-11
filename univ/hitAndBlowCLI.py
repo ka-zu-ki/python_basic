@@ -21,7 +21,6 @@ while flag == False:
                 if (b[i] < "0") or (b[i] > "9"):
                     print("数字ではありません")
                     break
-
         numsValidateFlag = True
 
     hit = 0
@@ -40,6 +39,8 @@ while flag == False:
     print('blow' + str(blow))
 
     if (hit == 4):
+        print('当たり')
         flag = True
     else:
+        print('はずれ')
         numsValidateFlag = False
